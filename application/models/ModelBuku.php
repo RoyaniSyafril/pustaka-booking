@@ -7,6 +7,11 @@ class ModelBuku extends CI_Model
  {
  return $this->db->get('buku');
  }
+ // Metode baru untuk menampilkan semua data buku
+ public function tampil()
+ {
+ return $this->db->get('buku')->result_array();
+ }
  public function bukuWhere($where)
  {
  return $this->db->get_where('buku', $where);
