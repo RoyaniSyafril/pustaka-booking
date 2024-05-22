@@ -139,7 +139,7 @@ text-primary mt-2 float-right"> Tampilkan</i></a>
  <th>Judul Buku</th>
  <th>Pengarang</th>
  <th>Penerbit</th>
- th>Tahun Terbit</th>
+ <th>Tahun Terbit</th>
  <th>ISBN</th>
  <th>Stok</th>
  </tr>
