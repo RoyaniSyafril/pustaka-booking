@@ -51,12 +51,13 @@ if ($this->form_validation->run() == false) {
     if ($upload_image) {
     $config['upload_path'] = './assets/img/profile/';
     $config['allowed_types'] = 'gif|jpg|png';
-    $config['max_size'] = '3000';
-    $config['max_width'] = '1024';
-    $config['max_height'] = '1000';
+    //$config['max_size'] = '3000';
+    //$config['max_width'] = '1024';
+    //$config['max_height'] = '1000';
     $config['file_name'] = 'pro' . time();
     $this->load->library('upload', $config);
     if ($this->upload->do_upload('image')) {
+      //echo "berhasil";exit;
     $gambar_lama = $data['user']['image'];
     if ($gambar_lama != 'default.jpg') {
     unlink(FCPATH . 'assets/img/profile/' . 
@@ -64,7 +65,9 @@ if ($this->form_validation->run() == false) {
     }
     $gambar_baru = $this->upload->data('file_name');
     $this->db->set('image', $gambar_baru);
-    } else { }
+    } else { 
+      //echo "gagal";
+    }
     }
     $this->db->set('nama', $nama);
     $this->db->where('email', $email);

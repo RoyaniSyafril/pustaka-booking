@@ -92,8 +92,8 @@ placeholder="Masukkan Judul Buku">
  <option value="">Pilih Kategori</option>
  <?php
  foreach ($kategori as $k) { ?>
- <option value="<?= $k['id'];?>"><?=
-$k['kategori'];?></option>
+ <option value="<?= $k['id_kategori'];?>"><?=
+$k['nama_kategori'];?></option>
  <?php } ?>
  </select>
  </div>

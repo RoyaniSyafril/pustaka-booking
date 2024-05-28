@@ -101,6 +101,7 @@ base_url('user/data_user'); ?>"><i class="fas fa-search mt-2 float-right"> Tampi
  <table class="table mt-3">
  <thead>
  <tr>
+ <th>No</th>
  <th>Nama Anggota</th>
  <th>Email</th>
  <th>Role ID</th>
